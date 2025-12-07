@@ -1,0 +1,46 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# -------------------------------
+# Paths
+csv_path = "results_demo/detection_report.csv"  # your detection CSV
+summary_csv_path = "results_demo/detection_summary.csv"
+
+# Safety check
+if not os.path.exists(csv_path):
+    print(f"Error: {csv_path} not found.")
+    exit(1)
+
+# -------------------------------
+# Load CSV
+df = pd.read_csv(csv_path)
+
+# -------------------------------
+# 1. Total detections per class
+class_counts = df['class'].value_counts()
+print("Total detections per class:")
+print(class_counts)
+
+# Pie chart for total class counts
+plt.figure(figsize=(6,6))
+class_counts.plot.pie(autopct='%1.1f%%', title="Detection Class Distribution")
+plt.ylabel('')
+plt.show()
+
+# -------------------------------
+# 2. Per-image summary
+per_image_summary = df.groupby('image')['class'].value_counts().unstack(fill_value=0)
+print("\nPer-image detection summary:")
+print(per_image_summary)
+
+# Save per-image summary CSV
+per_image_summary.to_csv(summary_csv_path)
+print(f"Per-image summary saved to {summary_csv_path}")
+
+# Bar chart for per-image detection counts
+per_image_summary.plot(kind='bar', stacked=True, figsize=(8,5), title="Per-Image Detection Summary")
+plt.xlabel("Image")
+plt.ylabel("Number of Detections")
+plt.tight_layout()
+plt.show()
