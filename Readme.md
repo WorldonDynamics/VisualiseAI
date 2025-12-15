@@ -1,6 +1,6 @@
 # VisualiseAI
 
-**Author:** Brendon Worldon + ChatGPT  
+**Author:** Brendon Worldon 
 **Status:** Demo-ready, polished for presentations and GitHub  
 
 ---
