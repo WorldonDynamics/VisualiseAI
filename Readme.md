@@ -9,9 +9,6 @@
 
 VisualiseAI demonstrates **YOLOv8 object detection and analytics** in a safe, offline demo. It’s designed for **presentations, portfolio showcases, or resume highlights**.
 
-> ⚠️ Note: This project focuses on **inference only**. The `train/val` folders are placeholders for potential future training.
-
----
 
 ## Key Features
 
@@ -21,7 +18,6 @@ VisualiseAI demonstrates **YOLOv8 object detection and analytics** in a safe, of
 - **CSV reporting and analytics**
 - **Polished demo slides with charts**
 
----
 
 ## Features in Action
 
@@ -35,5 +31,3 @@ VisualiseAI demonstrates **YOLOv8 object detection and analytics** in a safe, of
   - Stacked bar chart of detections per image  
 
 > This is just the beginning – more advanced visualisation and model insights are coming soon… 👀
-
----
