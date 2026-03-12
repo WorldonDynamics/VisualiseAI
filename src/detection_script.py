@@ -1,6 +1,5 @@
-"""
-YOLOv8 Still-Image Detection Demo (Full Script)
-Author: Brendon Worldon + ChatGPT
+#YOLOv8 Still-Image Detection
+#Author: Brendon Worldon
 
 Features:
 - YOLOv8 pretrained detection
@@ -197,4 +196,3 @@ if __name__ == "__main__":
     # Generate charts + summary
     generate_report()
 BLOCKLIST = ["tie"]
-
