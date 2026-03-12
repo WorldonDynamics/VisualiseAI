@@ -30,4 +30,4 @@ VisualiseAI demonstrates **YOLOv8 object detection and analytics** in a safe, of
   - Pie chart of class distribution  
   - Stacked bar chart of detections per image  
 
-> This is just the beginning – more advanced visualisation and model insights are coming soon… 👀
+> This is just the beginning – more advanced visualisation and model insights are coming soon… 
