@@ -1,5 +1,4 @@
 # src/plot_utils.py
-
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -18,7 +17,7 @@ def plot_class_distribution(class_counts):
         title="Detection Class Distribution",
         figsize=(6,6)
     )
-    plt.ylabel("")  # Remove y-label for cleaner look
+    plt.ylabel("")  
     plt.show()
 
 
@@ -42,8 +41,6 @@ def plot_per_image_summary(per_image_summary):
     plt.ylabel("Counts")
     plt.show()
 
-
-# Example usage (remove or comment out in production)
 if __name__ == "__main__":
     # Dummy data for testing
     class_counts = pd.Series([50, 30, 20], index=["cat", "dog", "bird"])
